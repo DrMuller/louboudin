@@ -1,12 +1,88 @@
-<!-- setup html page -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Louboudin</title>
+    <link
+      href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   <body>
-    <h1>Louboudin</h1>
-    <p>Coming soon...</p>
+    <main>
+      <header class="">
+        <h1>Louboudin</h1>
+      </header>
+      <section class="lead">
+        <div>
+          <h2>Du boudin</h2>
+          <h4>sans sang sur les main</h4>
+          <img
+            src="./asset/img/blood-sausage-slice.png"
+            alt="blood-sausage-slice"
+            width="400"
+          />
+        </div>
+      </section>
+      <footer>Copyright © 2023 Louboudin Inc. All rights reserved.</footer>
+    </main>
   </body>
 </html>
+
+<style>
+  @font-face {
+    font-family: audrey;
+    src: url(./asset/font/Audrey-Normal.otf);
+  }
+  :root {
+    --header-size: 80px;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h2,
+  h3,
+  h4 {
+    font-weight: 200;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: #000;
+    font-family: "Roboto", sans-serif;
+  }
+  header > h1 {
+    font-family: audrey;
+    margin: 0;
+  }
+  header,
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: var(--header-size);
+  }
+  footer {
+    color: #9a9a9a;
+  }
+  main {
+    height: 100vh;
+    width: 100%;
+  }
+  .lead {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 2 * var(--header-size));
+  }
+  .lead h2 {
+    margin: 0;
+  }
+  footer {
+    text-align: center;
+  }
+</style>
